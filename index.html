@@ -6,7 +6,7 @@
   <title>BizfluxAI – Adaptive Business Intelligence</title>
   <style>
     :root {
-      --logo-size: 520px; /* 👈 This change forces a cache invalidation */
+      --logo-size: 640px;
     }
 
     body {
@@ -30,19 +30,18 @@
       width: var(--logo-size);
       max-width: 100%;
       height: auto;
-      margin: 0 auto 32px auto;
+      margin: 0 auto 8px auto; /* tighter gap below logo */
       display: block;
-      border: 1px solid transparent; /* 👈 additional change for cache break */
     }
 
     h1 {
       font-size: 2rem;
-      margin: 16px 0 12px;
+      margin: 12px 0 6px;
     }
 
     p {
       font-size: 1.05rem;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       color: #333;
     }
 
@@ -76,6 +75,10 @@
     }
 
     @media (max-width: 600px) {
+      .logo {
+        width: 260px;
+      }
+
       .form {
         flex-direction: column;
         gap: 8px;
