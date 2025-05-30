@@ -17,31 +17,32 @@
       color: #1a2c54;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       height: 100vh;
     }
 
     .container {
       text-align: center;
-      padding: 40px 20px;
+      padding: 20px 20px 0;
+      margin-top: 20px;
     }
 
     .logo {
       width: var(--logo-size);
       max-width: 100%;
       height: auto;
-      margin: 0 auto 8px auto; /* tighter gap below logo */
+      margin: 0 auto 4px auto;
       display: block;
     }
 
     h1 {
-      font-size: 2rem;
-      margin: 12px 0 6px;
+      font-size: 1.6rem;
+      margin: 0 0 8px;
     }
 
     p {
-      font-size: 1.05rem;
-      margin-bottom: 24px;
+      font-size: 1rem;
+      margin-bottom: 20px;
       color: #333;
     }
 
@@ -77,6 +78,14 @@
     @media (max-width: 600px) {
       .logo {
         width: 260px;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 0.95rem;
       }
 
       .form {
