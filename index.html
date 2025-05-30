@@ -9,9 +9,13 @@
       --logo-size: 640px;
     }
 
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Inter', sans-serif;
       background-color: #f4f6f8;
       color: #1a2c54;
@@ -19,25 +23,25 @@
 
     .container {
       text-align: center;
-      padding: 24px 20px 12px;
+      padding: 12px 20px 0;
     }
 
     .logo {
       width: var(--logo-size);
       max-width: 100%;
       height: auto;
-      margin: 0 auto 6px auto;
       display: block;
+      margin: 0 auto;
     }
 
     h1 {
       font-size: 1.6rem;
-      margin: 4px 0 6px;
+      margin: 4px 0 4px;
     }
 
     p {
       font-size: 1rem;
-      margin: 0 0 18px;
+      margin-bottom: 18px;
       color: #333;
     }
 
@@ -46,7 +50,7 @@
       justify-content: center;
       flex-wrap: wrap;
       max-width: 480px;
-      margin: 0 auto 0;
+      margin: 0 auto;
     }
 
     input[type="email"] {
