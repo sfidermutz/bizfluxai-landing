@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BizfluxAI – Adaptive Business Intelligence</title>
   <style>
+    :root {
+      --logo-size: 520px; /* 👈 This change forces a cache invalidation */
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -23,11 +27,12 @@
     }
 
     .logo {
-      width: 520px;
+      width: var(--logo-size);
       max-width: 100%;
       height: auto;
       margin: 0 auto 32px auto;
       display: block;
+      border: 1px solid transparent; /* 👈 additional change for cache break */
     }
 
     h1 {
