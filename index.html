@@ -31,12 +31,12 @@
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 60px auto 6px auto; /* 👈 Only moves logo down */
+      margin: 100px auto 0 auto; /* 👈 Big push down */
     }
 
     h1 {
       font-size: 1.6rem;
-      margin: 4px 0 6px;
+      margin: -20px 0 4px; /* 👈 Negative top pulls it closer to logo */
     }
 
     p {
@@ -77,11 +77,12 @@
     @media (max-width: 600px) {
       .logo {
         width: 240px;
-        margin-top: 40px;
+        margin-top: 60px;
       }
 
       h1 {
         font-size: 1.3rem;
+        margin-top: -12px;
       }
 
       p {
