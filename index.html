@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizfluxAI – Smarter Business Starts Here</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #1a2c54;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      max-width: 480px;
+      width: 100%;
+    }
+    .logo {
+      height: 64px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+    input[type="email"] {
+      padding: 12px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+    }
+    button {
+      padding: 12px 20px;
+      border: none;
+      background-color: #7166F9;
+      color: white;
+      font-weight: bold;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+    .form {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+    }
+    @media(max-width: 600px) {
+      .form {
+        flex-direction: column;
+      }
+      input[type="email"], button {
+        width: 100%;
+        border-radius: 8px;
+        margin: 4px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="BizfluxAI Logo" class="logo" />
+    <h1>Smarter Business Starts Here</h1>
+    <p>Discover adaptive AI strategies, tools, and ideas built for modern solopreneurs.</p>
+
+    <!-- TODO: Replace the form action below with your Beehiiv/ConvertKit URL -->
+    <form class="form" action="https://example.com/your-form-endpoint" method="post" target="_blank">
+      <input type="email" name="email" placeholder="Your email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</body>
+</html>
